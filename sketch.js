@@ -1,6 +1,6 @@
 function setup() {
   // put setup code here
-  background(100);
+  background(101);
 }
 
 function draw() {
