@@ -1,42 +1,45 @@
-let xpos=0
-let ypos=0
+
+
+let xpos = 200
+let ypos = 0
+let xballspeed = 7
+let yballspeed = 5
+random(0,10000)
+
 function setup() {
   // put setup code here
-createCanvas(750,750);
-background(0,100,201);
-
+createCanvas(windowWidth, windowHeight);
 }
 
-
-
 function draw() {
-  // put drawing code he
+  //Put draw code here
+  background(20,20,20);
+  fill(mouseX, mouseY,200);
+  circle(xpos,ypos ,100);
 
-noStroke()
-fill(50)
-triangle(250,375,150,50,350,375);
+  xpos = xpos + xballspeed
+  ypos = ypos + yballspeed
 
-noStroke()
-fill(70)
-ellipse(350,400,220,300);
+//
+  if(xpos > width){
+  xballspeed = -xballspeed
+  }
 
-noStroke()
-fill(70)
-ellipse(350,200,190,190);
+  if (xpos < 0){
+    xballspeed = -xballspeed
+  }
 
-noStroke()
-fill(85)
-triangle(375,310,420,475,650,100);
+  if(ypos > windowHeight){
+    yballspeed = -yballspeed
+  }
 
-noStroke()
-fill(70)
-triangle(200, 275, 258, 220, 300, 275);
+  if(ypos < 0){
+    yballspeed = -yballspeed
+  }
 
-fill(200)
-circle(325,200,30);
-
-circle(mouseX,mouseY,50)
-
+if (mouseIsPressed & dist (mouseX, mouseY,xpos ,ypos) < 70){
+xpos= random(0,windowWidth)
+ypos= random(0,windowHeight)
 
 
 }
