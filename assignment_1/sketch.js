@@ -7,7 +7,7 @@ let circleSize = 1
 function setup() {
   // put setup code here
 createCanvas(windowWidth, windowHeight);
-background(204,204,255);
+background(9,43,68);
 
 }
 
@@ -31,17 +31,17 @@ if( keyIsPressed & keyCode === LEFT_ARROW){
   xpos = xpos - ballspeed;
 
   for(let i = 0 ; i < 5 ; i = i + 1){
-  let x1 = random (0 , width)
+  let x1 = random (xpos, width)
   let y1 = random (0 , ypos)
   let x2 = (xpos)
   let y2 = (ypos)
 
 
   ///////////color for lines//
-  let rcol = random(0,50)
-  let gcol = random(0,50)
-  let bcol = random(0,50)
-  let tran = random (100, 200)
+  let rcol = random(133,13)
+  let gcol = random(171, 42)
+  let bcol = random(249,100)
+  let tran = random (70, 200)
 
   let wei = random (1,5)
 
@@ -64,9 +64,9 @@ let y2 = (ypos)
 
 
 ///////////color for lines//
-let rcol = random(0,250)
-let gcol = random(0,10)
-let bcol = random(0,255)
+let rcol = random(45, 255)
+let gcol = random(213, 255)
+let bcol = random(239,255)
 let tran = random (100, 200)
 
 let wei = random (1,5)
