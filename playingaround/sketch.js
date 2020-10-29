@@ -9,9 +9,9 @@ background(20);
 }
 
 function draw(){
-  
+
 fill(255)
-circle(width/2, height/2);
+circle(20,20,20);
 
 
 

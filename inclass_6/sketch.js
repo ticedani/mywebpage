@@ -16,6 +16,7 @@ background(20,20,20)
   img.loadPixels()
 //start img #1//////////////////////////////////////////////
 //img(){
+
 for(let x=0; x< img.width; x=x+1){
   for(let y =0; y< img.height; y=y+1){
     let i= ( x+y * img.width) * 4;
@@ -92,7 +93,7 @@ for(let x=0; x< img.width; x=x+10){
 }
 }
     img.updatePixels();
-      image(img, 450 ,350,400,300)
+    //  image(img, 450 ,350,400,300)
 
 
 }
