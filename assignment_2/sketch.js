@@ -2,6 +2,7 @@ let back;
 let bee1;
 let bee2;
 let bee3;
+let bee4;
 let flo1;
 let flo2;
 let flo3;
@@ -19,6 +20,7 @@ function preload(){
   bee1= loadImage('https://i.imgur.com/BjlIRI9.png');
   bee2= loadImage('https://i.imgur.com/v2eDh2T.png');
   bee3= loadImage('https://i.imgur.com/HKhkjpr.png');
+  bee4= loadImage('https://i.imgur.com/NmKjZU6.png');
   flo1= loadImage('https://i.imgur.com/WWzzDvU.png');
   flo2= loadImage('https://i.imgur.com/2hotBK5.png');
   flo3= loadImage('https://i.imgur.com/SwJ7yEW.png');
@@ -41,7 +43,7 @@ background(back);
 push()
 imageMode(CENTER)
 
-x = int(random(1,4))
+x = int(random(1,5))
 //console.log(x)
  if (x === 1){
 
@@ -57,6 +59,9 @@ image(bee2,mouseX,mouseY);
 image(bee3,mouseX,mouseY)
 }
 
+if (x === 4) {
+image(bee4,mouseX,mouseY)
+}
 pop()
 
 //Flower #1//\/\/\/\//\/\//\/\/\/\/\/\/
