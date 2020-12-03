@@ -18,7 +18,7 @@ background(100,0,200);
 stroke(0,50)
 noFill();
 frameRate(10)
-rcol = 1.1
+rcol = 1
 gcol = 1.1
 bcol = 1.3
 }
