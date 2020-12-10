@@ -6,8 +6,8 @@ let gcol;
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(121,167,247);
-  //  noStroke();
-    noLoop();
+  // noStroke();
+    //noLoop();
 }
 
 
