@@ -13,8 +13,8 @@ sound = loadSound('https://ticedani.github.io/mywebpage/fin_pt1/nature.wav')
 function setup(){
   createCanvas(800,800);
  background(67,62,79)
-//noLoop();
 
+//Stars////////////////
 noStroke()
   frameRate(2)
   let n;
@@ -33,6 +33,14 @@ noStroke()
   }
   }
 
+  //moon
+  fill(168,143,176)
+  circle(400,550,400)
+  fill(209,193,214)
+  circle(400,550,375)
+  fill(255)
+  circle(400,550,325)
+
 }
 
 //////Create Sound//////////////////////////////////////////////////
@@ -46,7 +54,7 @@ else{
 }
 }
 
-//////////////////////////////////
+///////Tree making///////////////////////////
 function branch(depth){
   //frameRate(0.1)
   if (depth < 10) {
@@ -72,39 +80,14 @@ function branch(depth){
     }
   }
 }
-
-
 function draw(){
-  //background(67,62,79);
-
-
-
-
-
-
+/////// ground - front
   push()
   noStroke()
-  //frameRate(0.1)
-//stars//////////////////////
-
-
-  //moon cresent
-  fill(200)
-  circle(150,150,200)
-  fill(255)
-  circle(150,150,150)
-
-
-  //background color moon
-  //fill(67,62,79)
-  //circle(165,125,150)
-
-  // ground - front
   fill(14,0,23)
   rect(0,600,800,800);
   pop()
-
-
+//tree branches /////
 push()
   stroke(51,18,33)
   strokeWeight(15);

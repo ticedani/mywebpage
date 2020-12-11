@@ -15,14 +15,9 @@ function preload(){
 sound = loadSound('https://ticedani.github.io/mywebpage/fin_pt2/city.wav')
 }
 
-
-
 function setup() {
-  // put setup code here
 createCanvas(800,800);
 frameRate(10)
-
-
 }
 //////Create Sound//////////////////////////////////////////////////
 function mousePressed(){
